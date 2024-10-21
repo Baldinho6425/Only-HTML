@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noti my Problema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Onli-Cats</h1>
+    <p>Entaram na minha casa e calvaram meu gato</p>
+
+    <div class="catphoto">
+        <img src="Imgs/gatinho-calvo.png" alt="Calvo">
+    </div>
+
+    <button onclick="mostrarGif()">Clique aqui</button>
+
+    <!-- Caixa do GIF -->
+    <div id="gifContainer" style="display: none;">
+        <img src="Imgs/nyan-cat-1.gif" alt="Funny Gif" id="gif" />
+    </div>
+
+    <script>
+        function mostrarGif() {
+            var gifContainer = document.getElementById('gifContainer');
+            gifContainer.style.display = 'block';  
+        }
+    </script>
+
+
+</body>
+</html>
